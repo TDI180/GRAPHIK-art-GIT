@@ -1,7 +1,7 @@
 
  <h2> i am on the HOME-PAGE <h2>
 				  
- <p><a href="index.php?p=single"> PAGE---SINGLE </a></p>
+ 
 
  <p><a href="index.php?p=single">-----ZEBI-------VOILA-GIT </a></p>
  
