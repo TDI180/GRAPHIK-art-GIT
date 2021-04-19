@@ -4,6 +4,7 @@
  <p><a href="index.php?p=single"> PAGE---SINGLE </a></p>
 
  <p><a href="index.php?p=single">-----ZEBI-------VOILA-GIT </a></p>
+ 
     <ul>
 
 		<?php	
@@ -17,8 +18,9 @@
 		?>
 				
 				<h2> <a href="<?php echo $post->url ?>"> <?= $post->titre; ?> </a></h2>
-				<p> <?php echo $post->Extrait;
-				?> </p>
+				<p>
+				    <?php echo $post->Extrait;?> 
+				</p>
 			
 	   <?php endforeach; ?>
 
