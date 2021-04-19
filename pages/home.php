@@ -1,10 +1,8 @@
 
- <h2> i am on the HOME-PAGE <h2>
-				  
- 
+ <h2> i am on the HOME-PAGE 
 
  <p>
- <a>-----ZEBI-kbir bezef-------VOILA-GIT </a>
+ <a>-----ZEBI-kbir bezef</a>
  
  </p>
  
