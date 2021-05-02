@@ -3,14 +3,14 @@ namespace App\Table;
 
 class article {
 	           
-				 
+				 				
 				 public function __get($key) //methode magik a revoir
 				 {
 					var_dump ($key);
 					
 					$method = 'get'.ucfirst($key);	
 				    //echo '-------------------';
-					//var_dump ($this);
+					var_dump ($this);
 					//echo '-------------------';
 					
 					$key=$this->$method();

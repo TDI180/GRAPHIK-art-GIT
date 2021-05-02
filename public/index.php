@@ -17,16 +17,15 @@
 											ob_start ();
 																if ($p=== 'homeland') 
 																		{
-																		 require '../pages/home.php' ;
-																		 
+																		     require '../pages/home.php' ;
 																		}
 																		elseif  ($p=== 'single' )
 																		{ 
-																		 require '../pages/single.php' ; 
+																		     require '../pages/single.php' ; 
 																		}
 																		elseif  ($p=== 'article' )
 																		{ 
-																		 require '../pages/single.php' ; 
+																		     require '../pages/single.php' ; 
 																		}
 													
 											$content=ob_get_clean ();	
