@@ -35,6 +35,9 @@ $myclass->MyPublic(); // Works
 $myclass->MyProtected(); // Fatal Error
 $myclass->MyPrivate(); // Fatal Error
 $myclass->Foo(); // Public, Protected and Private work
+
+
+
 	
 	
 	
