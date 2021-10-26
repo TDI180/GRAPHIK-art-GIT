@@ -15,7 +15,7 @@
 															 /* le nom de la classe et du fichier contenant cette classe est identik c trés important de comprendre cela*/
 															 /*autoload charge le fichier et ensuite on peut acceder à la classe du meme nom*/
 															
-															 require  __DIR__ .  '/' . $class. '.php';
+															 require  __DIR__ .  '/'.$class.'.php';
 															 //var_dump ($class);
 																
 													      }
