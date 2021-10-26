@@ -6,7 +6,7 @@
  * Time: 16:30
  */
  
- tazzzzz
+ 
   class autoloader 					
                      {		  
 					  static function  autoload ($class)
