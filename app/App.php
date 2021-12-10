@@ -18,9 +18,25 @@ namespace App;
 										   
 			  return self::$database;							  
 
-				                            }
+				                           }
 				  
-				  
+			 public static function notFound () {
+
+												    header ("HTTP/1.0 404 Not Found");
+													header ('Location:index.php?p=404');
+					                            }
+												
+			 public static function TITLE($c,$a,$p) {									              
+											     //echo '----->'.$a;  
+											     //$p='homeland';
+											     if($p==='homeland'){echo '--starter-template---';} 
+												          else {
+															     if($p==='categorie') {echo $c;} else {echo $a;}
+												               }
+												return 0 ;			   
+											    								  
+				                              }		
+												
            }
 				 
 				 

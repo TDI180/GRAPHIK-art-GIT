@@ -24,7 +24,7 @@
 			?>
 		    
 				
-				<h2> <a href="<?php echo $post->url ?>"> <?= $post->titre; ?> </a></h2>
+				<h2>---------- <a href="<?php echo $post->url ?>"> <?= $post->titre; ?> </a>-------------</h2>
 				<p>
 				    <?php echo $post->Extrait;?> 
 				</p>
