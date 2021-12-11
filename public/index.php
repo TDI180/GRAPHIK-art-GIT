@@ -1,14 +1,10 @@
 <?php
 					require  '../app/Autoloader.php';
 					App\Autoloader::register(); //  call classes
-					/* TEST KEY SSH
-   COMMAND GIT PUSH MUST ASK FOR THE PASSWORD 
-
-
-*/
+					/* TEST KEY SSH COMMAND GIT PUSH MUST ASK FOR THE PASSWORD 
+                       TEST HTTPS -----------> GIT PUSH
+					*/
 					
-					
-
 					if (isset($_GET['p'])) 
 					{
 						$p=$_GET['p'] ;
@@ -18,24 +14,27 @@
 							$p='homeland';
 							
 						}
-										   //object initialisation
+										   //object initialisation database
 										   $db = new App\Database ('blog','','','');
 										   App\App::getDb();
 										   
 											ob_start ();
-																if ($p=== 'homeland') 
-																		{
-																		 require '../pages/home.php' ;
-																		 
-																		}
-																		elseif  ($p=== 'single' )
-																		{ 
-																		 require '../pages/single.php' ; 
-																		}
-																		elseif  ($p=== 'article' )
-																		{ 
-																		 require '../pages/single.php' ; 
-																		}
+														if ($p=== 'homeland') 
+																			{
+																			 require '../pages/home.php' ;																		 
+																			}
+																			elseif  ($p=== 'single' )
+																			{ 
+																			 require '../pages/single.php' ; 
+																			}
+																			elseif  ($p=== 'article' )
+																			{ 
+																			 require '../pages/single.php' ; 
+																			}
+																			elseif  ($p=== 'categorie' )
+																			{ 
+																			 require '../pages/categorie.php' ; 
+																			}
 													
 											$content=ob_get_clean ();	
 											require '../pages/templates/defaultpage.php' ; 					
