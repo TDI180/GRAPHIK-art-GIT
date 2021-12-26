@@ -6,7 +6,6 @@
  * Time: 16:30
  */
  
- 
   class autoloader 					
                      {		  
 					  static function  autoload ($class)
@@ -20,15 +19,15 @@
 															 require  __DIR__ .  '/'.$class.'.php';
 															 //var_dump ($class);
 																
-													      }
+													        }
 															
 					 static function register ()
 								                  { 
-													var_dump(array (__CLASS__, 'autoload'));
+													//var_dump(array (__CLASS__, 'autoload'));
 																		
 													spl_autoload_register (array (__CLASS__, 'autoload',)) ;	
 													//spl_autoload_register  ( __CLASS__ , 'autoload') ;	
 													/* le tableau array () contiendra le nom des classes  suivantes : ' zebi/HTML/form' & ' zebi/HTML/bootstrap'
 												   sous forme de string...qui sera ensuite nettoyé par str replace du 'namespace''...*/	
-										 		}	
+										 	  	  }	
 						   }

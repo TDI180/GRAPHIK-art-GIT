@@ -4,7 +4,9 @@
 					/* TEST KEY SSH COMMAND GIT PUSH MUST ASK FOR THE PASSWORD 
                        TEST HTTPS -----------> GIT PUSH
 					*/
-					
+				     $config = App\Config::getInstance();					
+					  echo '<br>';echo '<br>'; var_dump($config);					
+					  //echo  App\Config::getInstance()->get('db_user');
 					if (isset($_GET['p'])) 
 					{
 						$p=$_GET['p'] ;
@@ -18,7 +20,7 @@
 										   $db = new App\Database ('blog','','','');
 										   App\App::getDb();
 										   
-											ob_start ();
+										   ob_start ();
 														if ($p=== 'homeland') 
 																			{
 																			 require '../pages/home.php' ;																		 

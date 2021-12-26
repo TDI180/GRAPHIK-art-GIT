@@ -9,6 +9,9 @@ namespace App;
 			 const DB_HOST='localhost';
 		  
 		     private static $database;
+			 public $title ='frite-harissa';
+			 public static $title_2;			 
+			 
 
              public static function getDB() {
 
@@ -35,8 +38,24 @@ namespace App;
 												               }
 												return 0 ;			   
 											    								  
-				                              }		
+				                                   }
+												   
+			  public static function NEWTITLE($p,$cat) {									              
+											            
+														 if ($p==='homeland') { echo 'STARTER-TEMPLATE'; } else {echo $cat;}
+												      				  
+				                                       }	
+
+			  public function get_TITLE() {	 
+											 //echo 'zebi-kbir';
+											//echo self::$title;
+											return $this->title;
+										  }
 												
+			  public static function set_TITLE($title){	 
+												           return self::$title_2=$title;
+											    }	
+												      
            }
 				 
 				 

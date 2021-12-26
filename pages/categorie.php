@@ -7,17 +7,15 @@ $categorie =Categorie::find ($_GET['id']);
 
 if($categorie===false){ App::notFound();}
 
-
 $articles = Article::lastByCategory ($_GET['id']);
 $categories=Categorie::all();
-
 //var_dump ($categorie);
 
 ?>
  <p><a href="index.php?p=homeland"> PAGE---HOME </a></p>
  <h1>   <?= $categorie->titre; ?> <h1>
 
-<div class="row">
+    <div class="row">
 				<div class="col-sm-8">
 				
 		    <?php	
@@ -40,8 +38,8 @@ $categories=Categorie::all();
 				
 				<?php endforeach; ?>
 				
-				</div>
+				</div>				
 				
-				</div>
+      </div>
 
 

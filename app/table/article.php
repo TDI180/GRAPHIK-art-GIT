@@ -8,7 +8,8 @@ use zebi\zebi;
 $foo= new zebi();
 //$foo->choufZEBI();
 
-class article {
+class article extends Table 
+{
 	           
 				/*TEST DE LA BRANCHE */
 
@@ -24,12 +25,19 @@ class article {
 				   __set() est sollicitée lors de l'écriture de données vers des propriétés inaccessibles (protégées ou privées) ou non existante. 
 				*/ 
 				
-				
 				 public static function getLast() {
 													 return App::getDb()->query ("
-													 SELECT articles.id,articles.titre,articles.contenu,categories.titre as categorie
-													 FROM articles LEFT JOIN categories ON category_id = categories.id ",__CLASS__); 
-											      } 				
+													 SELECT article.id,article.titre,article.contenu,categorie.titre as categorie
+													 FROM article LEFT JOIN categorie ON category_id = categorie.id ",__CLASS__); 
+											      } 	
+
+
+                 public static function lastByCategory ($category_id)
+				                                  {
+													 return App::getDb()->prepare("
+													 SELECT article.id,article.titre,article.contenu,categorie.titre as categorie
+													 FROM article LEFT JOIN categorie ON category_id = categorie.id WHERE category_id = ? ",[$category_id],__CLASS__);
+				                                  }												  
 				
 				 
 				 public function __get($key) //methode magik a revoir
@@ -58,7 +66,7 @@ class article {
 				  public function getExtrait()
 				 {
 					$html='<p>'. substr ($this->contenu,0,300) .'....</p>';
-					$html .= '<p><a href="'.$this->getURL() .'"> Voir la suite</a> </p>';
+					$html .='<p><a href="'.$this->getURL() .'"> Voir la suite</a> </p>';
 					
 					return $html;
 				 }
@@ -70,7 +78,6 @@ class article {
 					
 					return $html;
 				 }
-	
 	
               }
 
