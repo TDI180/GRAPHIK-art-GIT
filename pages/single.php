@@ -4,7 +4,7 @@ use App\Table\Categorie;
 use App\Table\Article;
 ?>			  
 				  
-    <p> <h1> <a href="index.php?p=homeland"> PAGE---HOME </a> </h1> </p>
+   <a href="index.php?p=homeland"> PAGE---HOME </a> 
 	
 	 <h2> i am on the SINGLE-PAGE------> test-git <h2>
 				 
@@ -22,11 +22,11 @@ use App\Table\Article;
 			// var_dump ($tabdata[$_GET['id']]->contenu);
 			//$zebi=Article::getTable();
 			//echo "The full path of this file is: " . __FILE__;
-				echo "The directory of this file is: " . __DIR__;
+			//echo "The directory of this file is: " .__DIR__;
             //$post =Categorie::find($_GET['id']);
-						
+			echo "------------".$_GET["id"];			
 			$post= Article::find($_GET['id']);// select all the contain from article and put the contain in the object 'article
-			if($post===false){ App::notFound();}
+			if($post===false) { App::notFound();}
 			$categorie=Categorie::find($post->category_id);
 			
 			//var_dump ($post);	

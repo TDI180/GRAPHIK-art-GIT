@@ -5,14 +5,17 @@
 				  <head>
 					   <meta charset="utf-8">
 					   <title>
-							   <?php App\App::NEWTITLE($p,$categorie->titre);?>
+							   <?php //App\App::NEWTITLE($p,$categorie->titre);
+							   ?>
+							   <?php
+							    if($p === 'formulaire')  { echo 'PIZZAS';} else {App\Config::NEWTITLE($p,$categorie->titre);}
+							     ?>
 							  
 					   </title>						
 					          
 					   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 					   <meta name="description" content="">
 					   <meta name="author" content="">
-
 					   <!-- Le styles -->
 					
 					  <link rel="stylesheet" href="">
@@ -23,10 +26,7 @@
  <body>
                  
 		    <div class="navbar-navbar-fixed-top">
-								  
-			</div>
-						
-							 <div class="navbar navbar-fixed-top">
+			</div>	 <div class="navbar navbar-fixed-top">
 									  <div class="navbar-inner">
 										<div class="container">											
 														  <a class="brand" href="#">Project name</a>
@@ -36,20 +36,24 @@
 																										<li class="active">  <a href="#Home">Home</a></li>																												  
 																										<li class="active">  <a href="#about">About</a></li>
 																										<li class="active">  <a href="#contact">Contact</a></li>
+																										<li class="active">  <a href="index.php?p=formulaire">formulaire</a></li>
+																										<li class="active">  <a href="index.php?p=javascript">javascript</a></li>				<li class="active">  <a href="index.php?p=homeland">HOME-PAGE</a></li>
+																										<li class="active">  <a href="index.php?p=choix&api=produit">IndexAPI</a></li>
+																										<li class="active">  <a href="index.php?p=choix&api=zebi">API-REQUEST</a></li>	
 																								</ul>
 																					
 																			  </div><!--/.nav-collapse -->
 										</div>
 							 </div>
         </div>
-				
-    <div class="container">
+	        		
+                <div class="container">
 	
-	     <div class="starter-template" style="padding-top:200px">	
+	            <div class="starter-template" style="padding-top:200px">	
 		 
 			<?=$content;?>
 			  
-		 </div>
+		</div>
     </div> <!-- /container -->
 
   

@@ -1,13 +1,14 @@
 
- <h2> i am on the HOME-PAGE 
+ <h2>  </h2>
 						   <p>
-						 
-							 <a>NOURDINNE ADORE LA PLAYSTATION</a>
-						 
+						       <li class="active"> <a href="formulaire.php">      </a></li>
+						       <li class="active"> <a href="pages\formulaire.php"></a></li>
+							   <a> </a>
 						   </p>
     <ul>
 
-		    <?php	
+		    <?php			     
+			    				 
 				 //$tabdata=$db->query('SELECT * FROM articles','App\Table\article');
 				 //var_dump ($tabdata[0]);
 				 //echo $tabdata[0]->id;				
@@ -16,19 +17,23 @@
 				//echo "The full path of this file is: " . __FILE__;
 				//echo "The directory of this file is: " . __DIR__;
 				//echo dirname('G:\wamp64\www\GRAPHIKart\blog\app\table',6);
-				echo dirname(__FILE__);
+				/*echo dirname(__FILE__);
 				echo'<br>';
-				echo __FILE__;
+				echo __FILE__;*/
 				
-				foreach (\App\Table\article::getLast() as $post):
-				
-				//var_dump ($post);
-
+				//foreach (App\Table\article::getLast2() as $post):	
+				//echo $_GET["id"];-----------> c dans la balise href que $_get recupere les données
+				//echo $_GET["p"];
+				foreach (App\Table\article::getLast() as $post):
 			?>
-				<h2>---------- <a href="<?php echo $post->url ?>"> <?= $post->titre; ?> </a>-------------</h2>
-				 <p>  <em>---------<?= $post->categorie; ?>---------</em> </p>
+				<h2>AAAA---------- <a href="<?php echo $post->url ?>"> <?= $post->titre; ?> </a>------------AAAAA-</h2>
+				
+				 <p>  <em>************<?= $post->categorie; ?>************</em> </p>
 				<p>
-				    <?php echo $post->Extrait;?> 
+				    <?php echo $post->Extrait;
+					      var_dump ($post);
+						  var_dump ($post->url);
+					?> 
 				</p>
 			
 	        <?php endforeach; ?>
@@ -40,15 +45,12 @@
 							 <li> <a href=" <?=$categorie->url;?> "><?=$categorie->titre;?></a></li>
 							 
 							 <?php endforeach;
-							       //echo $categorie->titre;
-							       //var_dump ($categorie->titre);
-								   
+							    //echo $categorie->titre;
+							    //var_dump ($categorie->titre);
 							 ?>
 					         
 					   </ul>
 				</div>
-				
-
    </ul>
 
 

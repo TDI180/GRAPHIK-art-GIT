@@ -2,14 +2,19 @@
 namespace App\Table;
 
 use App\App;
+use App\Config;
 
 use zebi\zebi;
 
 $foo= new zebi();
 //$foo->choufZEBI();
 
-class article extends Table 
+class Article extends Table 
 {
+	
+	 public function __construct() {
+                                       //echo 'I am in '.__CLASS__.'</br>';
+                                   }
 	           
 				/*TEST DE LA BRANCHE */
 
@@ -29,7 +34,12 @@ class article extends Table
 													 return App::getDb()->query ("
 													 SELECT article.id,article.titre,article.contenu,categorie.titre as categorie
 													 FROM article LEFT JOIN categorie ON category_id = categorie.id ",__CLASS__); 
-											      } 	
+											      } 
+				public static function getLast2() {
+													 return Config::getDb()->query ("
+													 SELECT article.id,article.titre,article.contenu,categorie.titre as categorie
+													 FROM article LEFT JOIN categorie ON category_id = categorie.id ",__CLASS__); 
+											      } 									
 
 
                  public static function lastByCategory ($category_id)
@@ -37,7 +47,18 @@ class article extends Table
 													 return App::getDb()->prepare("
 													 SELECT article.id,article.titre,article.contenu,categorie.titre as categorie
 													 FROM article LEFT JOIN categorie ON category_id = categorie.id WHERE category_id = ? ",[$category_id],__CLASS__);
-				                                  }												  
+				                                  }	
+												  
+				 public static function getProduit() {
+													   return App::getDb()->query ("
+													   SELECT produit.id,produit.name,produit.description,produit.price FROM produit ",__CLASS__); 
+												    } 
+
+				 public static function getProduitid($id) {
+														   return App::getDb()->query ("
+														   SELECT * FROM produit WHERE id = $id ",__CLASS__); 
+													      } 									
+				 																	  
 				
 				 
 				 public function __get($key) //methode magik a revoir

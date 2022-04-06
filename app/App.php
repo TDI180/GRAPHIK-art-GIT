@@ -1,8 +1,12 @@
 <?php
 namespace App;       
 
- class App {
-		  
+class App {
+		    
+ 			 public function __construct() {
+                                             echo 'I am in '.__CLASS__.'</br>';
+                                           }
+			 
 		     const DB_NAME='blog';
 			 const DB_USER='root';
 			 const DB_PASS='root';
@@ -19,7 +23,7 @@ namespace App;
    				                             self::$database = new Database(self::DB_NAME,self::DB_USER,self::DB_PASS,self::DB_HOST);													   
 						                   } 
 										   
-			  return self::$database;							  
+			  return self::$database;
 
 				                           }
 				  
@@ -54,7 +58,7 @@ namespace App;
 												
 			  public static function set_TITLE($title){	 
 												           return self::$title_2=$title;
-											    }	
+											          }	
 												      
            }
 				 
