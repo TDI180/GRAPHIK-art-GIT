@@ -96,7 +96,12 @@ class Singleton {
 				}
  
 ?>
-			
-					 
-					 
+	
+   remarque :  echo '$notes' -----> renvoie $notes
+               echo "$notes" -----> renvoie contenu de $notes
+
+
+    $action = (int)readline ('entrer-data');			   
+		le keyword	(int) definit la nature de la variable que l on veut obtenir		 
+	echo "$action";				 
 					 
