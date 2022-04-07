@@ -66,15 +66,15 @@
 																			{
 																			 require '../pages/home.php' ;																		 
 																			}
-																			elseif  ($p=== 'single' )
+																			elseif  ($p=== 'single' && $api==='null' )
 																			{ 
 																			 require '../pages/single.php' ; 
 																			}
-																			elseif  ($p==='article' )
+																			elseif  ($p==='article'&& $api==='null')
 																			{ 
 																			 require '../pages/single.php' ; 
 																			}
-																			elseif  ($p=== 'categorie' )
+																			elseif  ($p=== 'categorie' && $api==='null')
 																			{ 
 																			 require '../pages/categorie.php' ; 
 																			}
@@ -85,6 +85,10 @@
 																			elseif  ($p=== 'Javascript' )
 																			{ 
 																			 require '../pages/javascript.php' ; 
+																			}
+																			elseif  ($p=== 'git' && $api==='null')
+																			{ 
+																			 require '../git/git-test.html' ; 
 																			}
 																			
 																			

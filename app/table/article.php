@@ -82,7 +82,7 @@ class Article extends Table
 				 public function getUrl()
 				 {
                     //var_dump ($this);
-					return 'index.php?p=article&id='. $this->id; 
+					return 'index.php?p=article&api=null&id='. $this->id; 
 				 }
 				  public function getExtrait()
 				 {

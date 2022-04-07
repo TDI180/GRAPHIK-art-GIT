@@ -50,8 +50,8 @@ class Config {
 				public function UnikID(){return  $this->id = uniqid();}	
 				
 				public function __construct(){	
-				                               //echo self::UnikID();//call the function to test if the instance is unik
-											   //echo $this->id = uniqid();// call the properties directly
+				                                //echo self::UnikID();//call the function to test if the instance is unik
+											    //echo $this->id = uniqid();// call the properties directly
 												//echo static::$id = uniqid(); //definit un unik id --> le construct cree un unik instance
 												
 												static::$settings = require dirname(__DIR__) . '/config/config.php'; 

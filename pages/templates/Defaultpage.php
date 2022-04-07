@@ -40,6 +40,7 @@
 																										<li class="active">  <a href="index.php?p=javascript">javascript</a></li>				<li class="active">  <a href="index.php?p=homeland">HOME-PAGE</a></li>
 																										<li class="active">  <a href="index.php?p=choix&api=produit">IndexAPI</a></li>
 																										<li class="active">  <a href="index.php?p=choix&api=zebi">API-REQUEST</a></li>	
+																										<li class="active">  <a href="index.php?p=git&api=null">git</a></li>
 																								</ul>
 																					
 																			  </div><!--/.nav-collapse -->

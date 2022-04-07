@@ -31,8 +31,8 @@
 				 <p>  <em>************<?= $post->categorie; ?>************</em> </p>
 				<p>
 				    <?php echo $post->Extrait;
-					      var_dump ($post);
-						  var_dump ($post->url);
+					     // var_dump ($post);
+						  //var_dump ($post->url);
 					?> 
 				</p>
 			
