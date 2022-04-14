@@ -27,7 +27,7 @@ class Table {
 
 					             } 
 								 else { 
-								       return App::getDb()->query($statement,get_called_class(),$one);
+								    return App::getDb()->query($statement,get_called_class(),$one);
 								      }
 
 				}
@@ -36,7 +36,7 @@ class Table {
 			
 			 {
 				//echo static::getTable() ;
-				return App::getDb()->prepare("SELECT * FROM ". static::getTable()." WHERE id= ?",[$id],get_called_class(),true);
+			    return App::getDb()->prepare("SELECT * FROM ". static::getTable()." WHERE id= ?",[$id],get_called_class(),true);
 			 }
 			 
 			public static function getTable ()
@@ -59,20 +59,20 @@ class Table {
 										 
 						           	      return App::getDb()->query(" SELECT * FROM " . static::getTable() ."",get_called_class());	
 										  
-										  }	
+										 }	
 
 										  
 			 public function __get($key) //methode magik a revoir
 				 
 										   {
-											//var_dump ($key);
-											
+											//var_dump ($key);											
 											$method = 'get'.ucfirst($key);	
-											//echo '-------------------';
+										    //echo '-------------------';
 											//var_dump ($this);
 											//echo '-------------------';
 											
-											$key=$this->$method();/* on rajoute les accolade et ca donne un appel de getURL() ou getExtrait()*/
+											$key=$this->$method();
+											 /* on rajoute les accolade et ca donne un appel de getURL() ou getExtrait()*/
 											//echo '*****************';
 											//var_dump ($key);
 											//echo '*****************';

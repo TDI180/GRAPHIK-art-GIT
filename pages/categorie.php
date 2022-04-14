@@ -12,7 +12,7 @@ $categories=Categorie::all();
 //var_dump ($categorie);
 
 ?>
- <p><a href="index.php?p=homeland"> PAGE---HOME </a></p>
+ <p><a href="index.php?p=homeland"> PAGE---HOME----zebi </a></p>
  <h1>   <?= $categorie->titre; ?> <h1>
 
     <div class="row">
@@ -33,9 +33,7 @@ $categories=Categorie::all();
 				<h2> <a href = " <?php echo $post->url ?> " > <?=$post->titre;?> </a> </h2>
 				
 			    <p>  <em>---------<?= $post->categorie; ?>---------</em> </p>
-			           <p>-----------<?= $post->Extrait;?>-------------</p> 
-                       					   
-				
+			         <p>-----------<?= $post->Extrait;?>-------------</p> 
 				<?php endforeach; ?>
 				
 				</div>				

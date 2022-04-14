@@ -7,7 +7,19 @@
 						   </p>
     <ul>
 
-		    <?php			     
+		    <?php	
+			
+			class foofoo {
+			         	static public function test() {
+					    var_dump(get_called_class());
+			        	}
+		        	}
+			
+					class bar extends foofoo {
+					}
+					
+					foofoo::test();
+					bar::test();
 			    				 
 				 //$tabdata=$db->query('SELECT * FROM articles','App\Table\article');
 				 //var_dump ($tabdata[0]);
@@ -32,7 +44,7 @@
 				<p>
 				    <?php echo $post->Extrait;
 					     // var_dump ($post);
-						  //var_dump ($post->url);
+						//var_dump ($post->url);
 					?> 
 				</p>
 			
@@ -42,8 +54,7 @@
 				
 				       <ul>
 					         <?php foreach (\App\Table\Categorie::all() as $categorie):?>
-							 <li> <a href=" <?=$categorie->url;?> "><?=$categorie->titre;?></a></li>
-							 
+							               <li> <a href=" <?=$categorie->url;?> "><?=$categorie->titre;?></a></li>
 							 <?php endforeach;
 							    //echo $categorie->titre;
 							    //var_dump ($categorie->titre);

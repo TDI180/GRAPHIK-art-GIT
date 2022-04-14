@@ -48,15 +48,16 @@
 													return strlen($item);
 												 }*/
 					 
-					if (isset($_GET['p']) && isset($_GET['api'])) 
+					if (isset($_GET['p']) && isset($_GET['api']) && isset($_GET['id'])) 
 					{
 						$p=$_GET['p'];
 						$api=$_GET['api'];
+						$id=$_GET['id'];
 					}
-						else 
-						{
-						$p='homeland';
-						}
+					else 
+					{
+					    $p='homeland';
+					}
 										  //object initialisation database
 										 //$db = new App\Database ('blog','','','');
 										//var_dump(App\App::getDb());
@@ -74,22 +75,27 @@
 																			{ 
 																			 require '../pages/single.php' ; 
 																			}
-																			elseif  ($p=== 'categorie' && $api==='null')
+																			elseif  ($p==='categorie' && $api==='null' && $id==='1')
 																			{ 
-																			 require '../pages/categorie.php' ; 
+																			    require '../pages/categorie.php'; 
 																			}
-																			elseif  ($p=== 'formulaire' )
+																			elseif  ($p==='categorie' && $api==='null' && $id==='2')
+																			{
+																				require '../pages/categorie.php';
+																			}
+																			elseif  ($p=== 'Javascript' && $api==='null')
 																			{ 
-																			 require '../pages/formulaire.php' ; 
+																			    require '../pages/formulaire.php' ; 
 																			}
 																			elseif  ($p=== 'Javascript' )
 																			{ 
-																			 require '../pages/javascript.php' ; 
+																			    require '../pages/javascript.php' ; 
 																			}
 																			elseif  ($p=== 'git' && $api==='null')
 																			{ 
-																			 require '../git/git-test.html' ; 
+																			    require '../git/git-test.html' ; 
 																			}
+
 																			
 																			
 										if ($p==='choix' && $api==='zebi') 

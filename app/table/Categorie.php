@@ -9,6 +9,8 @@ class Categorie extends Table {
 	                            public function getUrl()
 														 {
 															//var_dump ($this);
-															return 'index.php?p=categorie&id='. $this->id; 
+															return 'index.php?p=categorie&api=null&id='.$this->id; 
 														 }
-                                }
+											 
+                              }
+
