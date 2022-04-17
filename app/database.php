@@ -1,4 +1,4 @@
-<?php
+l<?php
    namespace App;
    use \PDO ; // permet l instanciation sans erreur de l objet PDO partout en evitant  de placer l antislash partout dans le code.
   // require 'blog\App\Table\Article.php';
