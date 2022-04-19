@@ -1,3 +1,6 @@
 NOTE.PHP
 NOTE-PHP.php
 GRAPHIK-art-GIT/
+vendor/
+composer.json
+composer.lock
