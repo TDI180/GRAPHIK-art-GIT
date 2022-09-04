@@ -1,5 +1,5 @@
 
- <h2>  </h2>
+ <h2>-------------------------------------------------------------------------------------------------------  </h2>
 						   <p>
 						       <li class="active"> <a href="formulaire.php">      </a></li>
 						       <li class="active"> <a href="pages\formulaire.php"></a></li>

@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
  
 <html lang="en">
@@ -36,11 +37,12 @@
 																										<li class="active">  <a href="#Home">Home</a></li>																												  
 																										<li class="active">  <a href="#about">About</a></li>
 																										<li class="active">  <a href="#contact">Contact</a></li>
-																										<li class="active">  <a href="index.php?p=formulaire">formulaire</a></li>
-																										<li class="active">  <a href="index.php?p=javascript">javascript</a></li>				<li class="active">  <a href="index.php?p=homeland">HOME-PAGE</a></li>
-																										<li class="active">  <a href="index.php?p=choix&api=produit">IndexAPI</a></li>
-																										<li class="active">  <a href="index.php?p=choix&api=zebi">API-REQUEST</a></li>	
-																										<li class="active">  <a href="index.php?p=git&api=null">git</a></li>
+																										<li class="active">  <a href="index.php?p=formulaire&api=null&id=null">formulaire</a></li>
+																										<li class="active">  <a href="index.php?p=javascript&api=null&id=null">javascript</a></li>		
+																										<li class="active">  <a href="index.php?p=homeland">HOME-PAGE</a></li>
+																										<li class="active">  <a href="index.php?p=choix&api=produit&id=null">IndexAPI</a></li>
+																										<li class="active">  <a href="index.php?p=choix&api=zebi&id=null">API-REQUEST</a></li>	
+																										<li class="active">  <a href="index.php?p=git&api=null&id=null">git</a></li>
 																								</ul>
 																					
 																			  </div><!--/.nav-collapse -->

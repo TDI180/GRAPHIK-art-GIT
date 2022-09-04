@@ -83,17 +83,21 @@
 																			{
 																				require '../pages/categorie.php';
 																			}
-																			elseif  ($p=== 'Javascript' && $api==='null')
+																			elseif  ($p=== 'formulaire' && $api==='null'&& $id==='null')
 																			{ 
 																			    require '../pages/formulaire.php' ; 
 																			}
-																			elseif  ($p=== 'Javascript' )
+																			elseif  ($p==='javascript' && $api==='null'&& $id==='null')
 																			{ 
 																			    require '../pages/javascript.php' ; 
 																			}
-																			elseif  ($p=== 'git' && $api==='null')
+																			elseif  ($p=== 'git' && $api==='null'&& $id==='null')
 																			{ 
 																			    require '../git/git-test.html' ; 
+																			}
+																			elseif  ($p=== 'yourpizza' && $api==='null'&& $id==='null')
+																			{ 
+																			    require '../pages/yourpizza.php' ; 
 																			}
 
 																			
@@ -102,11 +106,11 @@
 																			{
 																			  //if ($request_method==='')	{}
 																			    require '../API/Request-method.php' ; 																		 
-																			}
+																			}	
 																			elseif($p==='choix' && $api==='get')
-																			{ 
-																				require '../API/produits.php' ; 	
-																			}																				
+																			{   require '../API/produits.php' ; 
+																			}
+																			
 																			elseif($p==='choix' && $api==='post')
 																			{ 
 																				require '../API/produits.php' ; 	
