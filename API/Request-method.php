@@ -1,5 +1,5 @@
  
-     <h2> <p>-----------------------REQUEST-METHOD------------------------------</p></h2>
+     <h2> <p>---------INDEX--------REQUEST--------------METHOD-------------</p></h2>
 
 <p><a href="indexAPI.php?api=produit">  </a></p>
 <p><a href="index.php?p=choix&api=get&id=null">------GET------</a></p>
@@ -9,8 +9,4 @@
 <p><a href="index.php?p=choix&api=Update&id=null">---UPDATE---</a></p>
 <p><a href="index.php?p=choix&api=Delete&id=null
 ">---DELETE---</a></p>
-
-http://blog/index.php?p=homeland
-
-http://blog/index.php?a=choix
 

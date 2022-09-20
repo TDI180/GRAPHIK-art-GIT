@@ -39,9 +39,8 @@
 																										<li class="active">  <a href="#contact">Contact</a></li>
 																										<li class="active">  <a href="index.php?p=formulaire&api=null&id=null">formulaire</a></li>
 																										<li class="active">  <a href="index.php?p=javascript&api=null&id=null">javascript</a></li>		
-																										<li class="active">  <a href="index.php?p=homeland">HOME-PAGE</a></li>
-																										<li class="active">  <a href="index.php?p=choix&api=produit&id=null">IndexAPI</a></li>
-																										<li class="active">  <a href="index.php?p=choix&api=zebi&id=null">API-REQUEST</a></li>	
+																										<li class="active">  <a href="index.php?p=homeland">HOME-PAGE</a></li>																										
+																										<li class="active">  <a href="index.php?p=choix&api=produit&id=null">API-REQUEST</a></li>	
 																										<li class="active">  <a href="index.php?p=git&api=null&id=null">git</a></li>
 																								</ul>
 																					

@@ -101,8 +101,7 @@
 																			}
 
 																			
-																			
-										if ($p==='choix' && $api==='zebi') 
+										if ($p==='choix' && $api==='produit' && $id==='null') 
 																			{
 																			  //if ($request_method==='')	{}
 																			    require '../API/Request-method.php' ; 																		 
@@ -131,8 +130,6 @@
 																			{ 
 																				require '../API/produits.php' ; 	
 																			}
-
-
 
 																			
 											$content=ob_get_clean ();	
