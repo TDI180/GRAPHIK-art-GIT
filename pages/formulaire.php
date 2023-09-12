@@ -1,10 +1,5 @@
 
 <?php
-  class pizzeria {
-
-
-                 }
-  
   $pizza=[ 
            'margarita'=>'sauce tomate,fromage,12-euros',
            'fromage'=>'sauce tomate,fromage,chevre,emmental,13-euros',
@@ -23,13 +18,11 @@
     ];   
 
 
-
     foreach( $pizzeria as $result) {
       foreach ($result as $key => $value) {
          // echo $key."-".$value."<br />";
       }
   }
-
 
   //var_dump ($boissons);
   //echo $pizza ['margarita'].'<br>';
@@ -47,7 +40,7 @@
 <h1> composez votre pizza</h1>
 <p>choissisez vos ingrédients</p>
 
-  <form action="../pages/PANIER.php" method="get">
+<form action="../pages/PANIER.php" method="get">
                    <div>
                         <?php foreach ($pizza as $key=>$value):?>
                           <label>

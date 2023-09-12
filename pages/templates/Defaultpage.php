@@ -20,7 +20,7 @@
 					   <!-- Le styles -->
 					
 					  <link rel="stylesheet" href="">
-					  <lin rel="stylesheet" href="../public/css/bootstrap.css">
+					  <link rel="stylesheet" href="../BLOG/public/css/bootstrap.css">
 					  <link rel="stylesheet" href="https://getbootstrap.com/2.0.3/assets/css/bootstrap.css">
 					
 				</head> 

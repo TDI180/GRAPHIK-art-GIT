@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <head>
         <link rel="stylesheet" href="/design.css">
@@ -12,27 +10,23 @@
 
                 <?php 
                  $arrKeys = array_keys($_GET);
-
-                class pizzaModena {
-
+                    class pizzaModena {
                                        public function __construct(array $tabpizza,array $data_pizza)
                                         {
-                                        $this->tabpizza = $tabpizza;
-                                        $this->datapizza = $data_pizza;                                        
+                                         $this->tabpizza = $tabpizza;
+                                         $this->datapizza = $data_pizza;                                        
                                         }
-                                    private $tabpizza=[];    
-                                    private $margarita=['sauce-tomate','fromage'];  
-                                    protected $fromage=['sauce-tomate,fromage,emmental,chevre']; 
+                                        private $tabpizza=[];    
+                                        private $margarita=['sauce-tomate','fromage'];  
+                                        protected $fromage=['sauce-tomate,fromage,emmental,chevre']; 
                                    
-                                    public function displayPizza() {         
-                                                                     foreach ($this->datapizza as $meftah)
+                                        public function displayPizza() {         
+                                                                        foreach ($this->datapizza as $meftah)
                                                                                                 {
                                                                                                  echo '<h3>'.$meftah.'</h3>'.'<br>';
                                                                                                 }
                                                                     }  
-                                    }
-
-                                                  
+                                      }          
                 // var_dump ($_GET);
                 echo '<h3>--------here the key--------</h3>'.'<br>';
                
