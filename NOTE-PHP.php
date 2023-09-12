@@ -1,4 +1,6 @@
 
+SSH
+
 
      Scope Resolution Operator (::) --> double-colon=token ---->
 	 
@@ -103,5 +105,25 @@ class Singleton {
 
     $action = (int)readline ('entrer-data');			   
 		le keyword	(int) definit la nature de la variable que l on veut obtenir		 
-	echo "$action";				 
+	echo "$action";		
+
+
+
+ /* LES INTERFACES */
+ 
+ Type de classe ---> définis par the keyword INTERFACE à la place de CLASS
+ 
+ interface {} au lieu de class {}
+ 
+ interface {methode public et non-definie}
+ 
+  interface ,class et trait definié dans le meme spacename
+ 
+ 
+ objectif : créer des objets de classes différentes interchangeable car interface implementé
+ 
+ 
+
+
+	
 					 
